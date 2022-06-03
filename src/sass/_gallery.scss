@@ -1,0 +1,56 @@
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: -15px;
+    margin-top: 40px;
+}
+
+.photo-card {
+    min-width: 320px;
+    margin: 15px;
+    box-shadow: 0px 2px 2px rgb(200, 201, 201);
+
+
+    &:hover,
+    &:focus {
+        box-shadow: 0px 4px 4px rgb(200, 201, 201);
+    }
+   @media screen and (min-width: 768px) {
+        max-width: 340px;
+        flex-basis: calc(100% / 2 - 30px);
+        margin-left: 20px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        min-width: 320px;
+        flex-basis: calc(100% / 4 - 20px);
+        margin-left: 20px;
+    }
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+
+    margin-top: 0;
+    margin-bottom: 0;
+
+    &:not(:last-child) {
+        margin-right: auto;
+    }
+
+    & b {
+        margin-bottom: 5px;
+    }
+}

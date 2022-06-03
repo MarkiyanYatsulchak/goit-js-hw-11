@@ -1,0 +1,37 @@
+main {
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    min-height: 30vw;
+    object-fit: cover;
+
+    @media screen and (min-width: 768px) {
+        min-height: 25vw;
+    
+    }
+
+    @media screen and (min-width: 1280px) {
+        min-height: 20vw;
+    }
+}
+
+button {
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgb(134, 134, 134);
+        
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
