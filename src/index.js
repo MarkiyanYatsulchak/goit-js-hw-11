@@ -52,11 +52,10 @@ async function onLoadMore() {
     renderGallery(data);
     smoothScroll();
     checkGalleryEndPoint(data);
-    lightbox.refresh();
   } catch (error) {
     console.log(error.message);
   }
-
+  lightbox.refresh();
   loadMoreBtnVisible();
 }
 
